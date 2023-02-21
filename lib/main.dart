@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_flutter/column_widget.dart';
 import 'package:latihan_flutter/container_widget.dart';
-import 'package:latihan_flutter/home.dart';
+import 'package:latihan_flutter/latihan/latihan_1.dart';
 import 'package:latihan_flutter/row_widget.dart';
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         //   title: Text('Home'),
         //   backgroundColor: Color.fromARGB(255, 192, 142, 123),
         // ),
-        body: Home(),
+        body: Latihan1(),
         // body: Column(
         //   children: [
         //     RowWidget(),

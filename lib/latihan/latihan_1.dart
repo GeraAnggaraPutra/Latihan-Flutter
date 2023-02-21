@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class Latihan1 extends StatelessWidget {
+  const Latihan1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -150,6 +150,13 @@ class Home extends StatelessWidget {
               )
             ],
           )
+          // Container(
+          //   height: 50,
+          //   width: 400,
+          //   decoration: BoxDecoration(
+          //     color: Colors.black12,
+          //   ),
+          // ),
         ],
       ),
     );
