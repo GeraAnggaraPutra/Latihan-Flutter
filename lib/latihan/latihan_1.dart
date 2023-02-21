@@ -28,7 +28,10 @@ class Latihan1 extends StatelessWidget {
             height: 50,
             width: 380,
             decoration: BoxDecoration(
-              color: Colors.black12,
+              gradient: LinearGradient(
+                colors: [Colors.blueAccent, Colors.black26],
+              ),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
           Padding(padding: EdgeInsets.only(top: 15)),
@@ -48,7 +51,10 @@ class Latihan1 extends StatelessWidget {
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
-                  color: Colors.black12,
+                  gradient: LinearGradient(
+                    colors: [Colors.blueAccent, Colors.black26],
+                  ),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
               Container(
@@ -64,7 +70,10 @@ class Latihan1 extends StatelessWidget {
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
-                  color: Colors.black12,
+                  gradient: LinearGradient(
+                    colors: [Colors.blueAccent, Colors.black26],
+                  ),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
             ],
@@ -78,7 +87,12 @@ class Latihan1 extends StatelessWidget {
                   height: 120,
                   width: 120,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 104, 59, 59),
+                    gradient: LinearGradient(
+                      colors: [
+                        Color.fromARGB(255, 34, 238, 11),
+                        Colors.black26
+                      ],
+                    ),
                   ),
                 ),
                 Container(
@@ -87,7 +101,7 @@ class Latihan1 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Smk'),
+                      Text('Smk Assalaam Bandung'),
                       Text('Assalaam'),
                       Text('Bandung'),
                       Text('Pusat Keunggulan'),
@@ -99,7 +113,10 @@ class Latihan1 extends StatelessWidget {
             height: 150,
             width: 380,
             decoration: BoxDecoration(
-              color: Colors.black12,
+              gradient: LinearGradient(
+                colors: [Colors.blueAccent, Colors.black26],
+              ),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
           Padding(padding: EdgeInsets.only(top: 15)),
@@ -111,7 +128,12 @@ class Latihan1 extends StatelessWidget {
                   height: 120,
                   width: 120,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 104, 59, 59),
+                    gradient: LinearGradient(
+                      colors: [
+                        Color.fromARGB(255, 34, 238, 11),
+                        Colors.black26
+                      ],
+                    ),
                   ),
                 ),
                 Container(
@@ -120,7 +142,7 @@ class Latihan1 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Smk'),
+                      Text('Smk Assalaam Bandung'),
                       Text('Assalaam'),
                       Text('Bandung'),
                       Text('Pusat Keunggulan'),
@@ -132,31 +154,12 @@ class Latihan1 extends StatelessWidget {
             height: 150,
             width: 380,
             decoration: BoxDecoration(
-              color: Colors.black12,
+              gradient: LinearGradient(
+                colors: [Colors.blueAccent, Colors.black26],
+              ),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
-          Padding(padding: EdgeInsets.only(top: 20)),
-          Row(
-            children: [
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Center(
-                  child: Container(
-                    height: 60,
-                    width: 500,
-                    color: Colors.black12,
-                  ),
-                ),
-              )
-            ],
-          )
-          // Container(
-          //   height: 50,
-          //   width: 400,
-          //   decoration: BoxDecoration(
-          //     color: Colors.black12,
-          //   ),
-          // ),
         ],
       ),
     );
