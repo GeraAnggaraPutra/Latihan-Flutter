@@ -52,7 +52,7 @@ class Latihan1 extends StatelessWidget {
                 width: 150,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.blueAccent, Colors.black26],
+                    colors: [Colors.blueAccent, Colors.black],
                   ),
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -71,7 +71,7 @@ class Latihan1 extends StatelessWidget {
                 width: 150,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.blueAccent, Colors.black26],
+                    colors: [Colors.blueAccent, Colors.black],
                   ),
                   borderRadius: BorderRadius.circular(10),
                 ),

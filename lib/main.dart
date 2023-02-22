@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:latihan_flutter/column_widget.dart';
 import 'package:latihan_flutter/container_widget.dart';
 import 'package:latihan_flutter/latihan/latihan_1.dart';
+import 'package:latihan_flutter/latihan/latihan_list.dart';
+import 'package:latihan_flutter/list_view/list_view.dart';
+import 'package:latihan_flutter/list_view/list_view_builder.dart';
 import 'package:latihan_flutter/row_widget.dart';
 
 void main() {
@@ -16,12 +19,11 @@ class MyApp extends StatelessWidget {
       title: "Latihan Flutter",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // appBar: AppBar(
-        //   centerTitle: true,
-        //   title: Text('Home'),
-        //   backgroundColor: Color.fromARGB(255, 192, 142, 123),
-        // ),
-        body: Latihan1(),
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Product Listing'),
+        ),
+        body: LatihanList(),
         // body: Column(
         //   children: [
         //     RowWidget(),
