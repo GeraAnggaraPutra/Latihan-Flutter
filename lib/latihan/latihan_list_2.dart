@@ -9,21 +9,27 @@ class LatihanList2 extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemCount: 7,
       itemBuilder: (context, index) {
-        return Container(
-          child: Row(
-            children: [
-              Container(
-                margin: EdgeInsets.all(20),
-                height: 50,
-                width: 50,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(50),
-                ),
-              ),
-            ],
+        return Padding(
+          padding: const EdgeInsets.all(7.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage("assets/img/bg_1.jpg"),radius: 50,
           ),
         );
+        // return Container(
+        //   child: Row(
+        //     children: [
+        //       Container(
+        //         margin: EdgeInsets.all(20),
+        //         height: 50,
+        //         width: 50,
+        //         decoration: BoxDecoration(
+        //           color: Colors.blue,
+        //           borderRadius: BorderRadius.circular(50),
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        // );
       },
     );
   }
@@ -58,7 +64,10 @@ class LatihanList3 extends StatelessWidget {
       itemCount: car.length,
       itemBuilder: (context, index) {
         return Container(
-          margin: EdgeInsets.only(left: 18,top: 18,),
+          margin: EdgeInsets.only(
+            left: 18,
+            top: 18,
+          ),
           child: Card(
             child: Container(
               child: Container(
@@ -76,7 +85,7 @@ class LatihanList3 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Align(
-                        alignment: Alignment.centerLeft ,
+                          alignment: Alignment.centerLeft,
                           child: Text(
                             car[index],
                             style: TextStyle(
@@ -86,8 +95,8 @@ class LatihanList3 extends StatelessWidget {
                           ),
                         ),
                         Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text(merk[index]))
+                            alignment: Alignment.centerLeft,
+                            child: Text(merk[index]))
                       ],
                     )
                   ],
