@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
                   child: LatihanList3(),
                 ),
                  Text(
-                  "Dishes",
+                  "Popular Cars",
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
