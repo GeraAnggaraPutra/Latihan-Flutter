@@ -25,38 +25,47 @@ class MyApp extends StatelessWidget {
         //   title: Text('Product Listing'),
         // ),
         body: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  height: 100,
-                  child: LatihanList2(),
-                ),
-                Text(
-                  "Cars",
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
+          child: Column(
+            children: [
+              Container(
+                height: 100,
+                child: LatihanList2(),
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Container(
+                  margin: EdgeInsets.only(left: 18),
+                  child: Text(
+                    "Cars",
+                    style: TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-                Container(
-                  height: 250,
-                  child: LatihanList3(),
-                ),
-                 Text(
-                  "Popular Cars",
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Container(
-                  height: 250,
-                  child: LatihanList3(),
-                ),
-              ],
-            ),
+              ),
+              Container(
+                height: 250,
+                child: LatihanList3(),
+              ),
+               Align(
+                alignment: Alignment.centerLeft,
+                 child: Container(
+                  margin: EdgeInsets.only(left: 18),
+                   child: Text(
+                    "Popular Cars",
+                    style: TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
+                               ),
+                 ),
+               ),
+              Container(
+                height: 250,
+                child: LatihanList3(),
+              ),
+            ],
           ),
         ),
         // body: Column(

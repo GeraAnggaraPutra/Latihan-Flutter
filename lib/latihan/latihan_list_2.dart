@@ -57,22 +57,41 @@ class LatihanList3 extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemCount: car.length,
       itemBuilder: (context, index) {
-        return Card(
-          child: Padding(
-            padding: EdgeInsets.all(8),
+        return Container(
+          margin: EdgeInsets.only(left: 18,top: 18,),
+          child: Card(
             child: Container(
-              child: Column(
-                children: [
-                  Container(
-                    height: 150,
-                    width: 150,
-                    child: Image.network(
-                      image[index],
+              child: Container(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 150,
+                      margin: EdgeInsets.only(bottom: 20),
+                      child: Image.network(
+                        image[index],
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                  Text(car[index]),
-                  Text(merk[index])
-                ],
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Align(
+                        alignment: Alignment.centerLeft ,
+                          child: Text(
+                            car[index],
+                            style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(merk[index]))
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
