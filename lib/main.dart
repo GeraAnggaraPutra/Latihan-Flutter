@@ -3,6 +3,7 @@ import 'package:latihan_flutter/column_widget.dart';
 import 'package:latihan_flutter/container_widget.dart';
 import 'package:latihan_flutter/latihan/latihan_1.dart';
 import 'package:latihan_flutter/latihan/latihan_list.dart';
+import 'package:latihan_flutter/latihan/latihan_list_2.dart';
 import 'package:latihan_flutter/list_view/list_view.dart';
 import 'package:latihan_flutter/list_view/list_view_builder.dart';
 import 'package:latihan_flutter/row_widget.dart';
@@ -19,11 +20,45 @@ class MyApp extends StatelessWidget {
       title: "Latihan Flutter",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text('Product Listing'),
+        // appBar: AppBar(
+        //   centerTitle: true,
+        //   title: Text('Product Listing'),
+        // ),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  height: 100,
+                  child: LatihanList2(),
+                ),
+                Text(
+                  "Cars",
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  child: LatihanList3(),
+                ),
+                 Text(
+                  "Dishes",
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  child: LatihanList3(),
+                ),
+              ],
+            ),
+          ),
         ),
-        body: LatihanList(),
         // body: Column(
         //   children: [
         //     RowWidget(),
