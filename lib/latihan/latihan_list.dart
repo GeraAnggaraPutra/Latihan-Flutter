@@ -21,11 +21,11 @@ class LatihanList extends StatelessWidget {
   ];
   final List description = [
     "stylist iphone ever",
-    "best samsung ever",
-    "stylist realme ever",
-    "stylist oppo ever",
-    "stylist vivo ever",
-    "stylist xiaomi ever",
+    "best phone ever",
+    "most popular phone ever",
+    "best experience phone ever",
+    "best phone for live ever",
+    "china phone ever",
     "best phone for gaming",
   ];
   final List image = [
