@@ -20,54 +20,12 @@ class MyApp extends StatelessWidget {
       title: "Latihan Flutter",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.black,
         // appBar: AppBar(
         //   centerTitle: true,
         //   title: Text('Product Listing'),
         // ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: 100,
-                child: LatihanList2(),
-              ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                  margin: EdgeInsets.only(left: 18),
-                  child: Text(
-                    "Cars",
-                    style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                height: 250,
-                child: LatihanList3(),
-              ),
-               Align(
-                alignment: Alignment.centerLeft,
-                 child: Container(
-                  margin: EdgeInsets.only(left: 18),
-                   child: Text(
-                    "Popular Cars",
-                    style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                    ),
-                               ),
-                 ),
-               ),
-              Container(
-                height: 250,
-                child: LatihanList3(),
-              ),
-            ],
-          ),
-        ),
+        body: LatihanList2()
         // body: Column(
         //   children: [
         //     RowWidget(),
